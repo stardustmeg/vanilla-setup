@@ -17,6 +17,7 @@
     "stylelint-order": "6.0.4"
   },
   "scripts": {
+    "build": "bun build ./index.html --outdir ./dist",
     "check:format": "biome check . --linter-enabled=false",
     "dev": "live-server . --port=3000 --open=/index.html",
     "format": "biome check --write . && stylelint \"**/*.css\" --fix",
